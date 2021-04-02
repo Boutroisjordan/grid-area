@@ -13,18 +13,17 @@ body {
 
 #content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: minmax(200px, auto);
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 80%;
+    margin: 10% auto;
     gap: 10px;
     grid-template-areas: 
-    "header header header header" 
-    "aside aside main main" 
-    "nav nav main main" 
-    "section section section section"
-    "section section section section"
-    "footer footer footer footer";
+    "header header aside aside main main" 
+    "header header nav nav main main" 
+    "header header nav nav section section" 
+    "footer footer nav nav section section"
+    "footer footer gang gang section section";
 }
 #content > * {
     padding: 30px;
@@ -52,6 +51,9 @@ body {
     grid-area: footer;
 }
 
+.G {
+    grid-area: gang;
+}
 
 
 nav a {
